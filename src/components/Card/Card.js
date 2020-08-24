@@ -4,7 +4,7 @@ import "./style.less";
 const Card = ({ className, background, children }) => {
   return (
     <div className={className + " card"}>
-      {background && <img src={background} />}
+      {background && <img src={background} alt="" />}
       {children}
     </div>
   );

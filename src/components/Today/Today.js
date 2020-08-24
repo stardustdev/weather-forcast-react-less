@@ -1,31 +1,38 @@
 import React from "react";
 import Card from "../Card/Card";
 import moment from "moment";
+import Util from "../../service/Util";
 import "./style.less";
 
 const Today = ({ date, city, info }) => {
   const weekday = moment(date).format("dddd");
   const day = moment(date).format("MMM, D");
+  info.main.temp = parseInt(info.main.temp);
+
   return (
     <Card>
-      <div className="contain">
-        <p>
-          <span>
-            {weekday}
-            <br />
-            {day}
-          </span>
-        </p>
-        <p className="text-big">
-          {info.temperature > 0
-            ? `+${info.temperature}`
-            : `-${info.temperature}`}
-          <span>&#8451;</span>
-        </p>
-        <p>{info.text}</p>
-        <span class="today-text-city">{city}</span>
-        <img className="todaycard-background" src={info.icon} />
-      </div>
+      {info && (
+        <div className="contain">
+          <p>
+            <span>
+              {weekday}
+              <br />
+              {day}
+            </span>
+          </p>
+          <p className="text-big">
+            {info.main.temp > 0 ? `+${info.main.temp}` : `-${info.main.temp}`}
+            <span>&#8451;</span>
+          </p>
+          <p>{info.weather[0].description}</p>
+          <span className="today-text-city">{city}</span>
+          <img
+            className="todaycard-background"
+            src={Util.getIconWithWeather(info.weather[0].main)}
+            alt=""
+          />
+        </div>
+      )}
     </Card>
   );
 };

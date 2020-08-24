@@ -1,8 +1,9 @@
 .App {
   margin: auto;
   width: 100%;
+  min-width: 720px;
   max-width: 968px;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     160deg,
     rgba(0, 150, 247, 1) 0%,
@@ -13,13 +14,13 @@
 }
 
 .col {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .card {
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   overflow: hidden;
 }
 
@@ -30,10 +31,37 @@
 }
 
 .weather-icony {
-  margin-top: 30px;
   max-width: 300px;
 }
 
 .top-card {
   max-height: 150px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-horizontal {
+  flex-direction: row;
+}
+
+.flex-even {
+  flex: 1 1 0px;
+}
+
+.sp-1 {
+  margin-right: 0.5rem;
+}
+
+.sp-2:last-child {
+  margin-right: 0px;
+}
+
+.pd-1 {
+  padding: 0.5rem;
+}
+
+.pd-2 {
+  padding: 1rem;
 }

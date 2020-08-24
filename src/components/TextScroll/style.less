@@ -1,0 +1,23 @@
+.ts-horizontal {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.ts-item {
+  display: inline-block;
+  background-color: #01458070;
+  padding: 10px;
+  margin-right: 10px;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.ts-item.selected {
+  background-color: #014884;
+}
