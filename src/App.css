@@ -5,11 +5,19 @@
   max-width: 968px;
   min-height: 100vh;
   background: linear-gradient(
-    160deg,
-    rgba(0, 150, 247, 1) 0%,
-    rgba(6, 65, 123, 1) 75%,
-    rgba(5, 16, 34, 1) 100%
-  );
+      210deg,
+      rgba(0, 150, 247, 1) 0%,
+      rgba(6, 65, 123, 0.4) 25%,
+      rgba(5, 32, 68, 0.8) 80%,
+      rgba(6, 65, 123, 1) 90%,
+      rgba(0, 150, 247, 0.4) 150%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 150, 247, 1) 0%,
+      rgba(6, 65, 123, 1) 85%,
+      rgba(5, 16, 16, 1) 100%
+    );
   padding: 40px;
 }
 

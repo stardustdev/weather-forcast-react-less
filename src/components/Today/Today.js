@@ -25,7 +25,7 @@ const Today = ({ date, city, info }) => {
             <span className="text-big">&#8451;</span>
           </p>
           <p className="mb-0">{info.weather[0].description}</p>
-          <span className="today-text-city">{city}</span>
+          <span className="today-text-city transform-upper">{city}</span>
           <img
             className="todaycard-background"
             src={Util.getIconWithWeather(info.weather[0].main)}
