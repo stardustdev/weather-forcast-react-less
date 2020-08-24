@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
+
 import sunny from "./assets/images/sunny.png";
 import wind from "./assets/images/wind.png";
 import cloudy from "./assets/images/cloudy.png";
@@ -15,6 +16,7 @@ import iconCloud from "./assets/images/icon-cloudy.png";
 import iconSnow from "./assets/images/icon-snow.png";
 import iconRain from "./assets/images/icon-rain.png";
 import iconThunder from "./assets/images/icon-thunder.png";
+
 import moment from "moment";
 import Card from "./components/Card/Card";
 import Today from "./components/Today/Today";
@@ -94,7 +96,7 @@ function App() {
       <div className="row mt-2">
         <div className="col col-xs-12 col-md-5 flex-center">
           <div className="weather-icony">
-            <h2 className="text-white text-center">The Weather</h2>
+            <p className="text-big text-white text-center">The Weather</p>
             <div className="row">
               {icons.map((icon, index) => (
                 <div className="col col-sm-4 flex-center" key={index}>

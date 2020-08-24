@@ -22,9 +22,9 @@ const Today = ({ date, city, info }) => {
           </p>
           <p className="text-big">
             {info.main.temp > 0 ? `+${info.main.temp}` : `-${info.main.temp}`}
-            <span>&#8451;</span>
+            <span className="text-big">&#8451;</span>
           </p>
-          <p>{info.weather[0].description}</p>
+          <p className="mb-0">{info.weather[0].description}</p>
           <span className="today-text-city">{city}</span>
           <img
             className="todaycard-background"

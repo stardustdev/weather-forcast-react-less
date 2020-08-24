@@ -10,7 +10,13 @@
     rgba(6, 65, 123, 1) 75%,
     rgba(5, 16, 34, 1) 100%
   );
-  padding: 30px;
+  padding: 40px;
+}
+
+p,
+span {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .col {
@@ -50,6 +56,10 @@
   flex: 1 1 0px;
 }
 
+.transform-upper {
+  text-transform: uppercase;
+}
+
 .sp-1 {
   margin-right: 0.5rem;
 }
@@ -64,4 +74,8 @@
 
 .pd-2 {
   padding: 1rem;
+}
+
+.text-big {
+  font-size: 3rem;
 }
